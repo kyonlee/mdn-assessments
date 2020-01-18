@@ -38,4 +38,29 @@ h1 {
 	text-shadow: 1px 1px 1px black;
 }
 
-/* Your CSS below here */
+/* || Main letter */
+
+article {
+	background: url('top-image.png') no-repeat left top;
+	background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.2),
+			rgba(0, 0, 0, 0) 20%,
+			rgba(0, 0, 0, 0) 80%,
+			rgba(0, 0, 0, 0.2) 100%
+		),
+		url('top-image.png') no-repeat left top,
+		url('bottom-image.png') no-repeat left bottom;
+	background-color: rgba(255, 255, 255, 1);
+	border-top: 1mm solid rgba(210, 0, 0, 1);
+	border-bottom: 1mm solid rgba(210, 0, 0, 1);
+}
+
+/* || Logo */
+
+h1 {
+	background-image: url('logo.png');
+	/* filter: drop-shadow(3px 3px 3px black); */
+	border-radius: 64px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+}
