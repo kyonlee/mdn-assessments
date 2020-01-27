@@ -1,3 +1,21 @@
+/* Web fonts */
+
+@font-face {
+	font-family: 'open_sansregular';
+	src: url('fonts/opensans-regular-webfont.woff2') format('woff2'),
+		url('fonts/opensans-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'montserratregular';
+	src: url('fonts/montserrat-regular-webfont.woff2') format('woff2'),
+		url('fonts/montserrat-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* General setup */
 
 html {
@@ -16,14 +34,17 @@ body {
 
 h1 {
 	font-size: 3.2rem;
+	font-family: 'montserratregular', sans-serif;
 }
 
 h2 {
 	font-size: 2.4rem;
+	font-family: 'montserratregular', sans-serif;
 }
 
 p {
 	font-size: 1.4rem;
+	font-family: 'open_sansregular', sans-serif;
 	line-height: 1.6;
 	word-spacing: 0.6rem;
 }
