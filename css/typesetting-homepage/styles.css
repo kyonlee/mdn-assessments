@@ -1,0 +1,173 @@
+/* Font families */
+
+@font-face {
+	font-family: 'quicksand';
+	src: url('fonts/quicksand-regular-webfont.woff2') format('woff2'),
+		url('fonts/quicksand-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'droid-serif';
+	src: url('fonts/droidserif-regular-webfont.woff2') format('woff2'),
+		url('fonts/droidserif-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* General setup */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	min-width: 1000px;
+	max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+	float: left;
+	width: 50%;
+}
+
+aside {
+	float: left;
+	width: 30%;
+}
+
+nav {
+	float: left;
+	width: 20%;
+}
+
+footer {
+	clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+	padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+	border-top: 5px solid #aa6666;
+	border-bottom: 5px solid #aa6666;
+}
+
+/* general typesetting */
+
+html {
+	font-size: 10px;
+}
+
+h1,
+h2 {
+	font-family: 'quicksand';
+	letter-spacing: 2px;
+}
+
+body {
+	font-family: 'droid-serif';
+}
+
+header {
+	font-size: 2rem;
+	text-align: center;
+}
+
+section,
+aside {
+	line-height: 1.8;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+p,
+li {
+	font-size: 1.4rem;
+	letter-spacing: 0.5px;
+	word-spacing: 0.5px;
+}
+
+h2 + p {
+	text-indent: 20px;
+}
+
+/* typesetting links */
+
+section a,
+aside a {
+	color: #aa6666;
+}
+
+section a:link,
+aside a:link {
+	color: #aa6666;
+}
+section a:visited,
+aside a:visited {
+	color: #6d7687;
+}
+section a:focus,
+aside a:focus {
+	color: #b6c791;
+	text-decoration: none;
+	outline: none;
+}
+section a:hover,
+aside a:hover {
+	color: #b6c791;
+	text-decoration: none;
+}
+section a:active,
+aside a:active {
+	color: #ce7754;
+}
+a[href*='https://'] {
+	background: url('assets/link.svg') no-repeat 100% 100%;
+	background-size: 16px 16px;
+	padding-right: 18px;
+}
+
+/* typesetting lists */
+
+ul {
+	list-style: square;
+}
+
+/* navigation menu */
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	font-family: 'quicksand';
+	font-size: 2rem;
+	line-height: 3;
+	text-align: center;
+	margin: 2rem 0;
+	border: 1px solid #aa6666;
+}
+
+nav ul li:hover {
+	background-color: #aa6666;
+	cursor: pointer;
+}
+
+nav ul li a {
+	color: #b6c791;
+	text-decoration: none;
+}
